@@ -33,7 +33,7 @@ export default function Navigation() {
         <Nav className="float-end">
           <NavDropdown title={<span className="fi fi-gb pt-1"></span>}>
             <div className="ms-2">
-              <Link href="/vi"><span className="fi fi-vn"></span> Vietnamese</Link>
+              <Link href="/vi"><span className="fi fi-vn me-2"></span> Vietnamese</Link>
             </div>
           </NavDropdown>
           <Nav.Item className="mx-3 d-none d-lg-block">
