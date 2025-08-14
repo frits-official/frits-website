@@ -1,0 +1,39 @@
+{
+  "name": "frits-website",
+  "version": "1.0.0",
+  "description": "Website for FRITS club",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frits-official/frits-website.git"
+  },
+  "author": "FRITS club",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/frits-official/frits-website/issues"
+  },
+  "homepage": "https://github.com/frits-official/frits-website#readme",
+  "dependencies": {
+    "@formatjs/intl-localematcher": "^0.6.1",
+    "@fortawesome/fontawesome-svg-core": "^7.0.0",
+    "@fortawesome/free-brands-svg-icons": "^7.0.0",
+    "@fortawesome/free-regular-svg-icons": "^7.0.0",
+    "@fortawesome/free-solid-svg-icons": "^7.0.0",
+    "@fortawesome/react-fontawesome": "^0.2.3",
+    "bootstrap": "^5.3.7",
+    "flag-icons": "^7.5.0",
+    "material-icons": "^1.13.14",
+    "negotiator": "^1.0.0",
+    "next": "^15.4.6",
+    "react": "^19.1.1",
+    "react-bootstrap": "^2.10.10",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "typescript": "5.9.2"
+  }
+}

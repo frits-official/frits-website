@@ -1,0 +1,25 @@
+.dark { 
+    color: white!important;
+    border-radius: 0px 0px 5px 5px;
+}
+.dark a { 
+    color: white!important;
+}
+.dark img {
+    transition: all .2s ease-in-out;
+}
+.dark img:hover {
+    transform: scale(1.1);
+}
+.dark .nav-button {
+    background: inherit;
+    border: 0px;
+}
+.dark .nav-button:hover {
+    background: #0c0d0f;
+}
+@media screen and (max-width: 600px) {
+    #top {
+        position: static !important;
+    }
+}
