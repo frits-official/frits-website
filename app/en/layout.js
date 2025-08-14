@@ -14,6 +14,10 @@ import { Montserrat } from "next/font/google";
 const montserrat = Montserrat({ subsets: ["latin", "latin-ext", "vietnamese"]});
 
 export const metadata = {
+  robots: { index: false, follow: false },
+  verification: {
+    google: 'Qn2YNNz6voDE9SC5ARW3mp4SFu5OOId2FjHQf6pp6DM',
+  },
   title: 'Home | FPTSchool Robotics, Information Technology and Science Club - FRITS',
   description: 'FPTSchool Robotics, Information Technology and Science Club - FRITS is a robotics & STEAM club in Ha Noi, Vietnam. Founded by FPT Ha Noi High School students from 2016, the club had competed in many competition in the world, and alo had held many outreach activities to spread the STEAM spirit to all region in Vietnam.',
 }
