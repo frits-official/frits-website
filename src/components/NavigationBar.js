@@ -3,13 +3,15 @@ import logo from "../../public/logo-no-back.png"
 import Link from "next/link";
 import LocaleSwitcher from "./LocaleSwitcher";
 import { useTranslations, useLocale } from "next-intl";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
-export default function NavigationBar({ scrolled, handleShow }) {
+export default function NavigationBar({ handleShow }) {
   const t = useTranslations("basicLayout.nav")
   const locale = useLocale();
   const logoHeight = 60;
   return (
-    <Navbar className="dark rounded-bottom" style={{ backgroundColor: `rgba(21, 20, 26, ${scrolled})` }} sticky="top" id="top" data-bs-theme="dark">
+    <Navbar className={`dark rounded-bottom back`} sticky="top" id="top" data-bs-theme="dark">
       <Container fluid className="px-3">
         <Navbar.Brand className="ms-5 d-block">
           <Link href="/">
@@ -46,7 +48,7 @@ export default function NavigationBar({ scrolled, handleShow }) {
           </Nav.Item>
           <Nav.Item className="mx-3 d-lg-none">
             <Button as="a" variant="dark" className="nav-button" onClick={handleShow}>
-              <span className="material-icons-outlined">menu</span>
+              <FontAwesomeIcon icon={faBars} />
             </Button>
           </Nav.Item>
         </Nav>

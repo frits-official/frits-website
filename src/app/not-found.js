@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import "./home.css"
-import { faSpinner } from "@fortawesome/free-solid-svg-icons"
+import { faXmark } from "@fortawesome/free-solid-svg-icons"
 import { useTranslations } from "next-intl"
 
 export async function generateMetadata() {
@@ -9,14 +9,14 @@ export async function generateMetadata() {
   }
 }
 
-export default function Loading() {
+export default function NotFound() {
   const t = useTranslations('basicLayout.other')
   return (<>
     <div className="banner"></div>
     <div className="bannercontent d-flex align-items-center justify-content-center pb-5">
       <div className="pb-5 text-center">
-        <FontAwesomeIcon icon={faSpinner} size="5x" spin className="mb-3"/>
-        <p>{t('wait')}</p>
+        <FontAwesomeIcon icon={faXmark} size="5x" className="mb-3"/>
+        <p>{t('notFound')}</p>
       </div>
     </div>
   </>)

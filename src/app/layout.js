@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container } from 'react-bootstrap';
 import Navigation from '../components/Navigation';
-import './layout.css'
+import '../../public/global.css'
 import 'material-icons/iconfont/material-icons.css';
 import "/node_modules/flag-icons/css/flag-icons.min.css";
 import Footer from '../components/Footer';
@@ -15,18 +15,8 @@ import Head from 'next/head';
 const montserrat = Montserrat({ subsets: ["latin", "latin-ext", "vietnamese"]});
 
 import {getLocale} from 'next-intl/server';
-import {getTranslations} from 'next-intl/server';
 import { NextIntlClientProvider } from 'next-intl';
-
-export async function generateMetadata() {
-  const locale = await getLocale()
-  const t = await getTranslations({ locale, namespace: 'home.metadata' });
-
-  return {
-    title: t('title', {clubName: 'FPTSchool Robotics, Information Technology and Science Club - FRITS'}),
-    description: t('description')
-  }
-}
+import ToTop from '../components/ToTop';
 
 export default async function RootLayout({ children }) {
   const locale = await getLocale()
@@ -37,11 +27,14 @@ export default async function RootLayout({ children }) {
       </Head>
       <body className={montserrat.className}>
         <NextIntlClientProvider>
-          <Navigation/>
-          <Container fluid>
-            {children}
-          </Container>
-          <Footer/>
+          <div className="page-container">
+            <Navigation className="head"/>
+            <div className="out">
+              {children}
+            </div>
+            <ToTop/>
+            <Footer className="foot"/>
+          </div>
         </NextIntlClientProvider>
       </body>
     </html>

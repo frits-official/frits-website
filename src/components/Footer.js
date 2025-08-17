@@ -10,7 +10,7 @@ import {useTranslations} from 'next-intl';
 export default function Footer() {
     const t = useTranslations('basicLayout.footer');
     return (<>
-      <Container fluid id="foot" className="dark py-5">
+      <Container fluid id="foot" className="dark pt-5 pb-2">
         <Row className="align-items-center">
           <Col sm={{span: 3, offset: 1}} className="d-lg-flex d-none me-4">
             <a className="d-block me-4 my-auto rounded" target="_blank" rel="noreferrer" href="https://hoalac-school.fpt.edu.vn/"><img src={logoFPT.src} height='90rem' className="rounded"></img></a>
@@ -43,6 +43,11 @@ export default function Footer() {
               <li><a href="mailto://fschool.roboticsclub@gmail.com" target="_blank" rel="noreferrer">Email: fschool.roboticsclub@gmail.com</a></li>
               <li><a href="https://www.google.com/maps/place/Tr%C6%B0%C6%A1%CC%80ng+THPT+FPT+H%C3%A0+N%E1%BB%99i/@21.0124167,105.5252892,15z/data=!4m14!1m7!3m6!1s0x3135abc60e7d3f19:0x2be9d7d0b5abcbf4!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBGUFQgSMOgIE7hu5lp!8m2!3d21.0124167!4d105.5252892!16s%2Fm%2F02rsytm!3m5!1s0x31345bbfd675f23f:0x687158968ee822d6!8m2!3d21.0133697!4d105.5234187!16s%2Fg%2F11c42ks68d?entry=ttu&g_ep=EgoyMDI1MDgxMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noreferrer">{t('address')}</a></li>
             </ul>
+          </Col>
+        </Row>
+        <Row>
+          <Col sm={{span: 12}} className="text-center pt-2">
+          <small>Copyright © {new Date().getFullYear()} FPTSchool Robotics, Information Technology & Science Club</small>
           </Col>
         </Row>
       </Container>

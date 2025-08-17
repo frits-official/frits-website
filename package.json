@@ -28,7 +28,6 @@
     "@fortawesome/react-fontawesome": "^0.2.3",
     "bootstrap": "^5.3.7",
     "flag-icons": "^7.5.0",
-    "material-icons": "^1.13.14",
     "negotiator": "^1.0.0",
     "next": "^15.4.6",
     "next-intl": "^4.3.4",
