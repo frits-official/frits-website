@@ -1,11 +1,15 @@
 "use client"
 
 import { NavDropdown } from "react-bootstrap"
-import { useTransition } from "react";
+import { useEffect, useTransition } from "react";
 import { setUserLocale } from "../services/locale";
 
 export default function LocaleSwitcher({ currentValue, items }) {
   const [isPending, startTransition] = useTransition();
+
+  useEffect(() => {
+    setUserLocale(currentValue)
+  }, [])
 
   function onClick(value) {
     const locale = value

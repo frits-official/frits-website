@@ -1,5 +1,4 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container } from 'react-bootstrap';
 import Navigation from '../components/Navigation';
 import '../../public/global.css'
 import "/node_modules/flag-icons/css/flag-icons.min.css";
