@@ -34,7 +34,7 @@ export default function ToTop() {
   return (<div className="d-flex justify-content-end">
     <Button
     variant="dark"
-    className={`totop float-end me-3 mb-3 ms-auto fixed-bottom rounded-circle ${isVisible ? 'd-block' : 'd-none'}`}
+    className={`totop float-end me-4 mb-4 ms-auto fixed-bottom rounded-circle ${isVisible ? 'd-block' : 'd-none'}`}
     onClick={scrollToTop}>
       <FontAwesomeIcon icon={faArrowUp} />
     </Button>

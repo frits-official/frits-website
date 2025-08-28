@@ -11,7 +11,9 @@
     },
     "footer": {
       "thirdTitle": "Thông tin",
-      "address": "Địa chỉ: Khuôn viên Đại học FPT, Khu CNC Hòa Lạc, km29, Đại lộ Thăng Long, Hà Nội, Việt Nam"
+      "address": "Địa chỉ: Khuôn viên Đại học FPT, Khu CNC Hòa Lạc, km29, Đại lộ Thăng Long, Hà Nội, Việt Nam",
+      "sponsors": "Trân trọng cảm ơn các nhà tài trợ!",
+      "sponsorsDesc": "Tài trợ chúng tôi tại đây"
     },
     "other": {
       "notFound": "Ôi không! Có thể bạn đã truy cập vào một trang không tồn tại! Hãy thử một trang khác được liệt kê ở trên...",
@@ -25,7 +27,21 @@
       "description": "FPTSchool Robotics, Information Technology and Science Club - FRITS là câu lạc bộ robotics & STEAM đầu tiên và duy nhất tại THPT FPT Hà Nội, Vietnam. Thành lập từ 2016, CLB đã thi đấu tại nhiều đấu trường trong nước và quốc tế và cũng đã tổ chức nhiều hoạt động cộng đồng nhằm thúc đẩy tinh thần STEAM & robotics tại Việt Nam."
     },
     "page": {
-      "banner": "Nơi biến phép nhiệm màu thành sự thật..."
+      "banner": "Nơi biến phép nhiệm màu thành sự thật...",
+      "landing": {
+        "title": "Xem những điều kì diệu của FRITS...",
+        "about": "Giới thiệu",
+        "teams": "Đội thi",
+        "resource": "Tài nguyên & Tin tức"
+      }
+    }
+  },
+  "about": {
+    "metadata": {
+      "title": "Giới thiệu | {clubName}",
+      "description": "FPTSchool Robotics, Information Technology and Science Club - FRITS là câu lạc bộ robotics & STEAM đầu tiên và duy nhất tại THPT FPT Hà Nội, Vietnam. Thành lập từ 2016, CLB đã thi đấu tại nhiều đấu trường trong nước và quốc tế và cũng đã tổ chức nhiều hoạt động cộng đồng nhằm thúc đẩy tinh thần STEAM & robotics tại Việt Nam."
+    },
+    "page": {
     }
   }
 }

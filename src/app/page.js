@@ -1,7 +1,8 @@
-import { Container } from "react-bootstrap"
+import { Container, Row, Col } from "react-bootstrap"
 import "./home.css"
 import { useTranslations } from "next-intl"
 import { getLocale, getTranslations } from "next-intl/server"
+import Link from "next/link"
 
 export async function generateMetadata() {
   const locale = await getLocale()
@@ -24,34 +25,30 @@ export default function Page() {
         <p className="pt-3">{t('banner')}</p>
       </div>
     </div>
-    <Container className="under mt-5">
-      lol<br/>
-      lol<br/>
-      lol<br/>
-      lol<br/>
-      lol<br/>
-      lol<br/>
-      lol<br/>
-      lol<br/>
-      lol<br/>
-      lol<br/>
-      lol<br/>
-      lol<br/>
-      lol<br/>
-      lol<br/>
-      lol<br/>
-      lol<br/>
-      lol<br/>
-      lol<br/>
-      lol<br/>
-      lol<br/>
-      lol<br/>
-      lol<br/>
-      lol<br/>
-      lol<br/>
-      lol<br/>
-      lol<br/>
-      lol<br/>
+    
+    <Container className="mt-5">
+      <h2 className="text-center mb-4"><b>{t('landing.title')}</b></h2>
+      <Row>
+        <Tile sm={{span: 3, offset: 1}} background='/assets/teams.jpg' href="/team">
+          {t('landing.teams')}
+        </Tile>
+        <Tile sm={{span: 4, offset: 0}} background='/assets/about.jpg' className="mx-2" href="/about">
+          {t('landing.about')}
+        </Tile>
+        <Tile sm={{span: 3, offset: 0}} background='/assets/resource.jpg' href="/resource">
+          {t('landing.resource')}
+        </Tile>
+      </Row>
     </Container>
   </>)
+}
+
+function Tile({ sm, children, background, className, href }) {
+  return (<Col sm={sm}
+  className={"text-center tile d-flex align-items-center justify-content-center mb-3 p-0 rounded " + className}
+  style={{ backgroundImage: `url(${background})` }}>
+    <Link href={href} className="tilebefore d-flex align-items-center justify-content-center rounded">
+        <h3><b>{children}</b></h3>
+    </Link>
+  </Col>)
 }

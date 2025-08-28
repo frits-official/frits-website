@@ -10,14 +10,15 @@ import {useTranslations} from 'next-intl';
 export default function Footer() {
     const t = useTranslations('basicLayout.footer');
     return (<>
+      <hr className="w-75 mx-auto mt-4 mb-0"/>
+      <Container className="my-5">
+        <h2 className="text-center mb-2"><b>{t('sponsors')}</b></h2>
+        <Link href="/sponsor"><p className="text-center mb-3">{t('sponsorsDesc')}</p></Link>
+        <a className="rounded d-flex justify-content-center" target="_blank" rel="noreferrer" href="https://hoalac-school.fpt.edu.vn/"><img src={logoFPT.src} height='150rem'></img></a>
+      </Container>
       <Container fluid id="foot" className="dark pt-5 pb-2">
         <Row className="align-items-center">
-          <Col sm={{span: 3, offset: 1}} className="d-lg-flex d-none me-4">
-            <a className="d-block me-4 my-auto rounded" target="_blank" rel="noreferrer" href="https://hoalac-school.fpt.edu.vn/"><img src={logoFPT.src} height='90rem' className="rounded"></img></a>
-            <Link href='/'><img src={logo.src} height='120rem' className="d-block rounded"></img></Link>
-          </Col>  
-          <Col sm={{span: 3, offset: 1}} className="d-lg-none text-center">
-            <a className="rounded" target="_blank" rel="noreferrer" href="https://hoalac-school.fpt.edu.vn/"><img src={logoFPT.src} height='90rem' className="rounded"></img></a>
+          <Col sm={{span: 3, offset: 1}} className="text-center">
             <Link href='/'><img src={logo.src} height='120rem' className="rounded"></img></Link>
           </Col>  
           <Col sm={{span: 4, offset: 0}} className="d-md-block d-none text-center">
@@ -47,7 +48,7 @@ export default function Footer() {
         </Row>
         <Row>
           <Col sm={{span: 12}} className="text-center pt-2">
-          <small>Copyright © {new Date().getFullYear()} FPTSchool Robotics, Information Technology & Science Club</small>
+          <small>© {new Date().getFullYear()} FPTSchool Robotics, Information Technology & Science Club</small>
           </Col>
         </Row>
       </Container>

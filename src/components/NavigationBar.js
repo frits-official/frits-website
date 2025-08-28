@@ -13,7 +13,12 @@ export default function NavigationBar({ handleShow }) {
   return (
     <Navbar className={`dark rounded-bottom back`} sticky="top" id="top" data-bs-theme="dark">
       <Container fluid className="px-3">
-        <Navbar.Brand className="ms-5 d-block">
+        <Navbar.Brand className="ms-5 d-md-none">
+          <Link href="/">
+            <img src={logo.src} height={logoHeight} className="d-inline-block align-top me-2" alt="Logo"></img>
+          </Link>
+        </Navbar.Brand>
+        <Navbar.Brand className="ms-5 ps-5 d-md-block d-none">
           <Link href="/">
             <img src={logo.src} height={logoHeight} className="d-inline-block align-top me-2" alt="Logo"></img>
           </Link>
@@ -44,7 +49,7 @@ export default function NavigationBar({ handleShow }) {
             <Link href="/resource"><Button className="nav-button">{t('resource')}</Button></Link>
           </Nav.Item>
           <Nav.Item className="mx-3 d-none d-lg-block">
-            <Link href="/donate"><Button className="nav-button">{t('sponsor')}</Button></Link>
+            <Link href="/sponsor"><Button className="nav-button">{t('sponsor')}</Button></Link>
           </Nav.Item>
           <Nav.Item className="mx-3 d-lg-none">
             <Button as="a" variant="dark" className="nav-button" onClick={handleShow}>

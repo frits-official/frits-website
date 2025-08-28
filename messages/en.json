@@ -11,7 +11,9 @@
     },
     "footer": {
       "thirdTitle": "Information",
-      "address": "Address: Hoa Lac Hi-tech Park, Ha Noi, Vietnam"
+      "address": "Address: Hoa Lac Hi-tech Park, Ha Noi, Vietnam",
+      "sponsors": "Big thanks to our sponsors!",
+      "sponsorsDesc": "Sponsor us in here"
     },
     "other": {
       "notFound": "Uh oh! Maybe you have accessed a page that isn't exist! Let's try another page listed above...",
@@ -25,7 +27,21 @@
       "description": "FPTSchool Robotics, Information Technology and Science Club - FRITS is a robotics & STEAM club in Ha Noi, Vietnam. Founded by FPT Ha Noi High School students from 2016, the club had competed in many competition in the world, and also had held many outreach activities to spread the STEAM spirit to all region in Vietnam."
     },
     "page": {
-      "banner": "Where miracle come true..."
+      "banner": "Where miracle come true...",
+      "landing": {
+        "title": "See our incredibles...",
+        "about": "About",
+        "teams": "Teams",
+        "resource": "Resource & News"
+      }
+    }
+  },
+  "about": {
+    "metadata": {
+      "title": "About | {clubName}",
+      "description": "FPTSchool Robotics, Information Technology and Science Club - FRITS is a robotics & STEAM club in Ha Noi, Vietnam. Founded by FPT Ha Noi High School students from 2016, the club had competed in many competition in the world, and also had held many outreach activities to spread the STEAM spirit to all region in Vietnam."
+    },
+    "page": {
     }
   }
 }

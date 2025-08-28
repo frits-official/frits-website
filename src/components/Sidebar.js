@@ -19,7 +19,7 @@ export default function Sidebar({ show, handleClose }) {
           <Link onClick={handleClose} href="/about"><Button className="nav-button">{t('about')}</Button></Link>
           <Link onClick={handleClose} href="/team"><Button className="nav-button">{t('teams')}</Button></Link>
           <Link onClick={handleClose} href="/resource"><Button className="nav-button">{t('resource')}</Button></Link>
-          <Link onClick={handleClose} href="/donate"><Button className="nav-button">{t('sponsor')}</Button></Link>
+          <Link onClick={handleClose} href="/sponsor"><Button className="nav-button">{t('sponsor')}</Button></Link>
         </Stack>
       </Offcanvas.Body>
     </Offcanvas>
