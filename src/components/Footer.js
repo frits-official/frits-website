@@ -11,10 +11,10 @@ export default function Footer() {
     const t = useTranslations('basicLayout.footer');
     return (<>
       <hr className="w-75 mx-auto mt-4 mb-0"/>
-      <Container className="my-5">
+      <Container className="mb-5 mt-5">
         <h2 className="text-center mb-2"><b>{t('sponsors')}</b></h2>
-        <Link href="/sponsor"><p className="text-center mb-3">{t('sponsorsDesc')}</p></Link>
-        <a className="rounded d-flex justify-content-center" target="_blank" rel="noreferrer" href="https://hoalac-school.fpt.edu.vn/"><img src={logoFPT.src} height='150rem'></img></a>
+        <Link href="/sponsor"><p className="text-center mb-4">{t('sponsorsDesc')}</p></Link>
+        <a className="rounded d-flex justify-content-center" target="_blank" rel="noreferrer" href="https://hoalac-school.fpt.edu.vn/"><img src={logoFPT.src} height='170rem'></img></a>
       </Container>
       <Container fluid id="foot" className="dark pt-5 pb-2">
         <Row className="align-items-center">
