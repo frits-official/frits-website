@@ -21,7 +21,7 @@ export default async function RootLayout({ children }) {
   return (
     <html lang={locale}>
       <Head>
-        <meta name="apple-mobile-web-app-title" content="FRITS" />
+        <meta name="apple-mobile-web-app-title" content="FRITS"/>
       </Head>
       <body className={montserrat.className}>
         <NextIntlClientProvider>

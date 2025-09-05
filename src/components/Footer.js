@@ -10,8 +10,8 @@ import {useTranslations} from 'next-intl';
 export default function Footer() {
     const t = useTranslations('basicLayout.footer');
     return (<>
-      <hr className="w-75 mx-auto mt-4 mb-0"/>
-      <Container className="mb-5 mt-5">
+      <hr className="w-75 mx-auto mt-4 mb-5"/>
+      <Container className="mb-5">
         <h2 className="text-center mb-2"><b>{t('sponsors')}</b></h2>
         <Link href="/sponsor"><p className="text-center mb-4">{t('sponsorsDesc')}</p></Link>
         <a className="rounded d-flex justify-content-center" target="_blank" rel="noreferrer" href="https://hoalac-school.fpt.edu.vn/"><img src={logoFPT.src} height='170rem'></img></a>

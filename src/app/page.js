@@ -29,13 +29,13 @@ export default function Page() {
     <Container className="mt-5">
       <h2 className="text-center mb-4"><b>{t('landing.title')}</b></h2>
       <Row>
-        <Tile sm={{span: 3, offset: 1}} background='/assets/teams.jpg' href="/team">
+        <Tile sm={{span: 4}} background='/assets/teams.jpg' href="/team">
           {t('landing.teams')}
         </Tile>
-        <Tile sm={{span: 4, offset: 0}} background='/assets/about.jpg' className="mx-2" href="/about">
+        <Tile sm={{span: 4}} background='/assets/about.jpg' href="/about">
           {t('landing.about')}
         </Tile>
-        <Tile sm={{span: 3, offset: 0}} background='/assets/resource.jpg' href="/resource">
+        <Tile sm={{span: 4}} background='/assets/resource.jpg' href="/resource">
           {t('landing.resource')}
         </Tile>
       </Row>
@@ -44,11 +44,13 @@ export default function Page() {
 }
 
 function Tile({ sm, children, background, className, href }) {
-  return (<Col sm={sm}
-  className={"text-center tile d-flex align-items-center justify-content-center mb-3 p-0 rounded " + className}
+  return (<Col sm={sm}>
+    <div
+  className={"tile d-flex align-items-center justify-content-center mb-3 rounded " + className}
   style={{ backgroundImage: `url(${background})` }}>
-    <Link href={href} className="tilebefore d-flex align-items-center justify-content-center rounded">
+    <Link href={href} className="tilebefore d-flex align-items-center justify-content-center">
         <h3><b>{children}</b></h3>
     </Link>
+    </div>
   </Col>)
 }
