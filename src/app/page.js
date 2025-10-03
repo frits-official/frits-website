@@ -48,7 +48,7 @@ function Tile({ sm, children, background, className, href }) {
     <div
   className={"tile d-flex align-items-center justify-content-center mb-3 rounded " + className}
   style={{ backgroundImage: `url(${background})` }}>
-    <Link href={href} className="tilebefore d-flex align-items-center justify-content-center">
+    <Link href={href} className="tilebefore d-flex align-items-center justify-content-center rounded">
         <h3><b>{children}</b></h3>
     </Link>
     </div>

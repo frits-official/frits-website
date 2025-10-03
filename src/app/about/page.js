@@ -23,7 +23,7 @@ export default function Page() {
       </Col>
       <Col sm={{span: 6, offset: 0}} className="mt-3 mt-md-0 introline text-center text-sm-start d-flex align-items-center">
         <div>
-          <h1><b>F</b>PTSchool <b>R</b>obotics, <b>I</b>nformation <b>T</b>echnology & <b>S</b>cience Club</h1>
+          <h1 className="mb-3">FPTSchool Robotics, Information Technology & Science Club</h1>
           {t('clbdesc')}
         </div>
       </Col>
@@ -40,6 +40,14 @@ export default function Page() {
         <FirstImg src="/assets/outreach.jpg" dim>number of outreach</FirstImg>
       </Col>
     </Row>
+    <Row className="mt-4">
+      <Col sm={{span: 4, offset: 2}}>
+        <FirstImg src="/assets/comp.jpg" dim>number of member through years</FirstImg>
+      </Col>
+      <Col sm={{span: 4}}>
+        <FirstImg src="/assets/award.jpg" dim>number of reach on social media (follow)</FirstImg>
+      </Col>
+    </Row>
   </Container>)
 }
 
@@ -47,7 +55,7 @@ function FirstImg({src, dim = false, children}) {
   if (!dim) return (<div style={{backgroundImage: 'url("' + src + '")'}} className="firstimg rounded d-flex align-items-center justify-content-center">{children}</div>);
   else return (<div className="w-100 h-100">
     <div style={{backgroundImage: 'url("' + src + '")'}} className="firstimg rounded">
-      <div className="w-100 h-100 dim d-flex align-items-center justify-content-center">{children}</div>
+      <div className="w-100 h-100 dim d-flex align-items-center justify-content-center rounded">{children}</div>
     </div>
   </div>)
 }
