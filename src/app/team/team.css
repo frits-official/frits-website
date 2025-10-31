@@ -1,0 +1,18 @@
+:root { 
+  --nav-height: 86px;
+}
+.firstimg {
+  width: 100%;
+  aspect-ratio: 1;
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
+}
+.dim {
+  background-color: rgba(0, 0, 0, .5);
+  z-index: 1;
+}
+.introline b {
+  font-size: 110%;
+  color: white;
+}
